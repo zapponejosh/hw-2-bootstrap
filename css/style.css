@@ -1,32 +1,53 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: lightgrey;
+    width: 100%;
 }
 
 header {
 
     height: auto;
-    width: auto;
     background-color: brown;
     margin-bottom: 30px;
 }
 
 header .logo {
+    width: 300px;
     background-color: burlywood;
     margin-left: 15px;
     margin-bottom: 0;
     padding: 20px;
-    font-family: 'Shadows Into Light', cursive;;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+}
+.navbar {
+    padding-right: 20px;
 }
 
-#navId {
-    position: absolute;
-    right: 20px;
+.nav-link {
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+
+.card {
+    margin: 40px auto;
+}
+
+.about-title {
+    padding: 20px 0 0.25rem;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+
 }
 
 .img-about {
     max-height: 300px;
     object-fit: contain;
     padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -37,8 +58,8 @@ header .logo {
 
 
 footer {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     width: 100%;
     height: 60px;
     background-color: lightcoral;
@@ -46,4 +67,10 @@ footer {
 
 footer p {
     padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-about {
+        width: 100%;
+    }
 }
