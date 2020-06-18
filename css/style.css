@@ -7,28 +7,48 @@ body {
 header {
 
     height: auto;
-    background-color: brown;
+    background-color: rgb(22, 22, 22);
     margin-bottom: 30px;
+    border-bottom: 4px solid slategray;
 }
 
 header .logo {
-    width: 300px;
+    width: 280px;
     background-color: burlywood;
     margin-left: 15px;
     margin-bottom: 0;
-    padding: 20px;
+    padding: 0.5rem;
     font-family: 'Shadows Into Light', cursive;
     text-align: center;
 }
 .navbar {
-    padding-right: 20px;
+    padding-right: 30px;
+    justify-content: flex-end;
 }
 
 .nav-link {
     font-size: 1.25rem;
     color: whitesmoke;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 55%, #cc6419 55%)
 }
 
+.active {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 45%, #f7822f 45%)
+}
+
+/* Nav Link Hover states */
+.nav-link:hover {
+    color: whitesmoke;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 45%, #f7822f 45%)
+}
+
+/* .active:hover {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 55%, #cc6419 55%)
+} */
+
+
+
+/* Card */
 .card {
     margin: 40px auto;
 }
@@ -58,8 +78,8 @@ hr {
 
 
 footer {
-    /* position: absolute;
-    bottom: 0; */
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 60px;
     background-color: lightcoral;
@@ -69,8 +89,33 @@ footer p {
     padding-top: 20px;
 }
 
+/* Fix for mav bar */
+@media only screen and (max-width: 680px) {
+    .nav-link {
+        padding: .5rem;
+        font-size: 1.2rem;
+    }
+    .navbar {
+        padding-right: 15px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .img-about {
         width: 100%;
+    }
+    header .logo {
+        width: 100%;
+        margin-left: 0;
+    }
+    .logo-box {
+        padding: 0;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .nav-link {
+        padding: .5rem;
+        font-size: 1.2rem;
     }
 }
