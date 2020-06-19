@@ -83,8 +83,11 @@ hr {
 
 .portfolio-item {
     padding: 30px 50px;
+}
 
-
+/* Fixes FF bug that shrinks image @ around 980px */
+.portfolio-img {
+    min-width: 200px;
 }
 
 .portfolio-text {
