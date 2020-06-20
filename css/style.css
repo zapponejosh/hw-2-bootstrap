@@ -1,7 +1,11 @@
+/* Sets root font size */
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: lightgrey;
-    width: 100%;
 }
 
 /* Page container and wrap to keep the footer placed below */
