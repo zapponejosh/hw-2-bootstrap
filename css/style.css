@@ -1,3 +1,10 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: lightgrey;
+    width: 100%;
+}
+
+/* Page container and wrap to keep the footer placed below */
 #page-container {
     position: relative;
     min-height: 100vh;
@@ -7,36 +14,28 @@
     padding-bottom: 2.5rem;
 }
 
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: lightgrey;
-    width: 100%;
-}
-
 
 /* header CSS */
 
 header {
 
     height: auto;
-    background-color: rgb(22, 22, 22);
+    background-color: #222222;
     margin-bottom: 30px;
-    border-bottom: 4px solid slategray;
 }
 
 header .logo {
     width: 280px;
-    background-color: burlywood;
+    background-color: #cc6419;
     margin-left: 15px;
     margin-bottom: 0;
     padding: 0.5rem;
     font-family: 'Shadows Into Light', cursive;
     text-align: center;
+    color: whitesmoke;
 }
 
-
-/* site nav */
-
+    /* site nav */
 .navbar {
     padding-right: 30px;
     justify-content: flex-end;
@@ -48,44 +47,65 @@ header .logo {
     background: linear-gradient(180deg,rgba(255,255,255,0) 55%, #cc6419 55%)
 }
 
-/* current page nav-link */
+    /* current page nav-link */
 .active {
     background: linear-gradient(180deg,rgba(255,255,255,0) 45%, #f7822f 45%)
 }
 
-/* Nav Link Hover states */
+    /* Nav Link Hover states */
 .nav-link:hover {
     color: whitesmoke;
     background: linear-gradient(180deg,rgba(255,255,255,0) 45%, #f7822f 45%)
 }
+/* End header */
 
+/* Main section CSS */
 
-
-/* Main CSS */
-
-/* Card */
+    /* Card */
 .card {
     margin: 40px auto;
 }
-
-/* Card header */
+    /* Card header */
 .about-title {
     padding: 20px 0 0.25rem;
 }
 
 hr {
     margin-top: 0;
-    margin-bottom: 1.25rem;
-
+    margin-bottom: 1.5rem;
 }
 
-/* about page image css */
+/* about page css */
 .img-about {
     max-height: 300px;
     object-fit: contain;
     padding-right: 20px;
     padding-bottom: 20px;
+    padding-top: 10px;
 }
+
+.img-squirrel {
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+    padding: 20px;
+}
+
+.big-text {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.fa-github {
+    color: #cc6419;
+}
+
+.fa-github:hover {
+    color: #f7822f;
+    text-decoration: none;
+}
+/* End section */
+
 
 /* Portfolio CSS */
 
@@ -110,6 +130,7 @@ hr {
     font-size: 1.6rem;
     padding: 7px;
 }
+/* End section */
 
 
 /* Footer CSS */
@@ -119,11 +140,13 @@ footer {
     bottom: 0;
     width: 100%;
     height: 60px;
-    background-color: lightcoral;
+    background-color: #222222;
+    border-top: 4px solid #cc6419;
 }
 
 footer p {
     padding-top: 20px;
+    color: whitesmoke;
 }
 
 
@@ -141,8 +164,8 @@ footer p {
 }
 
 
-@media only screen and (max-width: 600px) {
     /* Responsive header */
+@media only screen and (max-width: 600px) {
     header .logo {
         width: 100%;
         margin-left: 0;
